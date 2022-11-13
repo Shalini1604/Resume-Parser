@@ -5,6 +5,8 @@ from email.mime.text import MIMEText
 import smtplib
 import getpass
 
+# For automation of mails to people after filtering
+
 msg = MIMEMultipart()
 
 msg['From'] = input('Enter sender mail ID:\n')
