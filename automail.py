@@ -1,3 +1,4 @@
+import pandas as pd
 from email.mime.multipart import MIMEMultipart
 from email.mime.image import MIMEImage
 from email.mime.text import MIMEText
@@ -6,8 +7,8 @@ import getpass
 
 msg = MIMEMultipart()
 
-msg['From'] = input('Enter sender mail address:\n')
-msg['To'] = input('Enter receiver mail address:\n')
+msg['From'] = input('Enter sender mail ID:\n')
+msg['To'] = input('Enter receiver mail ID:\n')
 msg['Subject'] = input('Enter subject')
 if int(input('Attaching image? (0/1)')):
     msg.attach(MIMEImage(open(input('Enter image path'),'rb').read()))
