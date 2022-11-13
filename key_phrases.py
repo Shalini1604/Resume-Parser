@@ -118,7 +118,7 @@ def main():
     totalKeywords = len(sortedKeywords)
     rake = Rake("db\\Stop_Word_List.txt")
     keywords = rake.run(text)
-    print (keywords)
+   
 
 
 if __name__ == '__main__':
