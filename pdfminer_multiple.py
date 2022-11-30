@@ -55,4 +55,3 @@ def convertMultiple(pdfDir, txtDir):
                     continue
         else:
             print(" Given directory does not exist ")
-
